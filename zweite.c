@@ -15,9 +15,9 @@ int main()
     gets(sn);
 
     printf("\n------------\n");
-    puts(sn);
+    printf("%s\n", sn);
 
-    length = strlen(sn)-1;
+    length = strlen(sn);
 
     for(i = 0;i <= length; i++)
     {
