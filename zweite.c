@@ -12,7 +12,7 @@ int main()
     char k;
 
     printf("Please enter student name: ");
-    fgets(sn, sizeof(sn), stdin);
+    gets(sn);
 
     printf("\n------------\n");
     puts(sn);
