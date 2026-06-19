@@ -1,3 +1,6 @@
+// طباعة حروف الاسم و عددها 
+
+
 #include <stdio.h>
 #include <string.h>
 
