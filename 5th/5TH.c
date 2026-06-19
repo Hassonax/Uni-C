@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+  main()
 {
     int n, i, j;
     int s = 0;
@@ -31,5 +31,5 @@ int main()
     }
 
     printf("Result s = %d\n", s);
-    return 0;
+    
 }
