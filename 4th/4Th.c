@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+  main()
 {
     int i, m = 0, c = 0, k = 0;
 
@@ -20,5 +20,5 @@ int main()
     }
 
     printf("m=%d\nc=%d\nk=%d\n", m, c, k);
-    return 0;
+
 }
