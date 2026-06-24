@@ -1,21 +1,31 @@
 #include <stdio.h>
+
 main(){
- int m , i ,even_nums=0 , oddNumCount=0 ,oddNumSum=0;
- printf("enter the num");
- scanf("%d",&m);
- float odd_numAvg;
- i=1;
- while(i<m){
+    int m, i, even_nums = 0, oddNumCount = 0, oddNumSum = 0;
+    float odd_numAvg;
 
- if(i%2==0){
-    even_nums +=1;
- }else{
+    printf("enter the num: ");
+    scanf("%d", &m);
 
-     oddNumCount +=1;
-     oddNumSum += i;
+    i = 1;
+    while(i <= m){
+        if(i % 2 == 0){
+            even_nums += 1;
+        } else {
+            if(i % 5 == 0){
+                oddNumCount += 1;
+                oddNumSum += i;
+            }
+        } 
+        i++;
+    }
 
- } i++;}
-  odd_numAvg = oddNumSum/oddNumCount;
-  printf("%f",odd_numAvg);
-  printf("is the avg");
+    if(oddNumCount > 0) {
+        odd_numAvg = (float)oddNumSum / oddNumCount;
+        printf("The average of odd numbers % by 5 is: %f\n", odd_numAvg);
+    } else {
+        printf("No odd numbers % by 5 were found.\n");
+    }
+
+    printf("The count of even numbers is: %d\n", even_nums);
 }
